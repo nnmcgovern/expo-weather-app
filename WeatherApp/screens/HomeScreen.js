@@ -1,11 +1,13 @@
 import React from "react";
-import { View, Text, SafeAreaView, Image } from "react-native";
+import { View, Text, Image } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView>
-      <Text className="text-red-500 z-0">Home Screen</Text>
+    <View className="relative">
       <Image source={require("../assets/sky.jpeg")} className="h-full w-full" />
-    </SafeAreaView>
+      <Text className="absolute top-0 left-0 text-6xl text-red-500">
+        Home Screen
+      </Text>
+    </View>
   );
 }
